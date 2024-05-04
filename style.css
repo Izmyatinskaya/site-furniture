@@ -1,6 +1,7 @@
 body{
     width: 1440px;
     margin: 12px 32px 0px 32px;
+    display: flex;
 }
 header, nav{
     display: flex;
@@ -20,7 +21,7 @@ header{
 .logo{
     margin-right: 861px;
 }
-.text{
+.text18{
     color: var(--text-dark, #212529);
     font-size: 18px;
     font-family: "Roboto";
@@ -46,6 +47,11 @@ h1{
     text-transform: uppercase;
     margin: 0px;
 }
+.text20{
+    color: var(--text-dark, #212529);
+    font-size: 20px;
+    font-family: "Roboto";
+}
 .sec1-2{
     display: flex;
     flex-direction: row;
@@ -63,4 +69,57 @@ h1{
     margin-bottom: 250px;
     margin-top: 0px;
 }
-
+h2{
+    font-family: "Inter";
+    color: var(--text-dark, #212529);
+    font-size: 48px;
+    font-weight: 400;
+    width: 562px;
+    margin: 0px;
+}
+.text16{
+    color: var(--text-dark, #212529);
+    font-size: 16px;
+    font-family: "Roboto";
+    margin: 0px;
+}
+h3{
+    font-family: "Inter";
+    color: var(--text-dark, #212529);
+    font-size: 36px;
+    font-weight: 400;
+    width: 562px;
+    margin: 0px;
+}
+.sec2{
+    display: flex;
+    flex-direction: row;
+}
+.sec2-1{
+    width: 562px;
+    margin-right: 135px;
+}
+.sec2-2{
+    display: flex;
+    flex-direction: column;
+    width: 679px;
+}
+.sec2-2-1{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 44px;
+    width: 446px;
+}
+.sec2-2-2{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.sec2-2-2 span{
+    width: 146px;
+}
+.sec2-2-2 div{
+    display: flex;
+    flex-direction: column;
+}
