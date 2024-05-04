@@ -195,3 +195,44 @@ td:last-child {
     width: 365px;
     text-align: center;
 }
+.sec6{
+    display: flex;
+    flex-direction: row;
+    gap: 136px;
+}
+.sec6-1{
+    display: flex;
+    flex-direction: column;
+}
+.sec6-1 h2{
+    margin-bottom: 32px;
+}
+.sec6-1 p{
+    margin-bottom: 72px;
+}
+input{
+    border: none;
+    border-bottom: 1px solid var(--text-dark, #212529);
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+}
+#name, #mail{
+    margin-bottom: 16px;
+}
+#tel{
+    margin-bottom: 24px;
+}
+input::-webkit-input-placeholder {
+    color: var(--text-dark, #212529);
+} 
+button{
+    width: 176px;
+    height: 46px;
+    background-color:#212529;
+    color: white;
+    box-shadow: none;
+    font-size: 16px;
+    font-family: "Roboto";
+    margin: 0px;
+}
