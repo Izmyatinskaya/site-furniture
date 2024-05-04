@@ -25,3 +25,42 @@ header{
     font-size: 18px;
     font-family: "Roboto";
 }
+main{
+    display: flex;
+    gap: 120px;
+    flex-direction: column;
+}
+.sec1-1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+h1{
+    font-family: "Inter";
+    color: var(--text-dark, #212529);
+    font-size: 72px;
+    font-weight: 400;
+    width: 794px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+.sec1-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+.sec1-2-1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.sec1-2-1 > p {
+    width: 445px;
+    margin-bottom: 250px;
+    margin-top: 0px;
+}
+
