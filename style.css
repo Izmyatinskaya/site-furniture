@@ -1,1 +1,27 @@
-
+body{
+    width: 1440px;
+    margin: 12px 32px 0px 32px;
+}
+header, nav{
+    display: flex;
+    width: 1440px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+header{
+    gap: 40px;
+}
+.header-col{
+    display: flex;
+    flex-direction: column;
+    margin-right: 207px;
+}
+.logo{
+    margin-right: 861px;
+}
+.text{
+    color: var(--text-dark, #212529);
+    font-size: 18px;
+    font-family: "Roboto";
+}
