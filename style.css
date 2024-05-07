@@ -1,40 +1,5 @@
-@media screen and (max-width: 767px) and (orientation: portrait) 
-{
-    body{
-        width: 375px;
-        margin: 16px 8px 8px 20px;
-    }
-    header, nav{
-        display: flex;
-        width: 343px;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-    header > nav > img{
-        width: 39px;
-    }
-    header > nav > a{
-        display: none;
-    }
-    .header-col{
-        display: none;
-    }
-    .burger{
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-        align-items: flex-end;
-    }
-    .burger img:nth-child(1), .burger img:nth-child(2), .burger img:nth-child(3){
-        width: 24px;
-    }
-    .burger img:nth-child(3){
-        width: 14px;
-    }
-}
-@media screen and (min-width: 768px) and (orientation: landscape) 
-{
+
+
 body{
     width: 1440px;
     margin: 12px 32px 16px 32px;
@@ -61,9 +26,6 @@ header{
     color: var(--text-dark, #212529);
     font-size: 18px;
     font-family: "Roboto";
-}
-.burger{
-    display: none;
 }
 main{
     display: flex;
@@ -311,4 +273,56 @@ footer p {
 .sec7-1 > p, .sec7-3 > p {
     text-transform: uppercase;
 }
+@media only screen and (max-width: 767px) and (min-width: 100px)
+{
+    body{
+        width: 375px;
+        margin: 16px 8px 8px 20px;
+    }
+    header, nav{
+        display: flex;
+        width: 343px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 39px;
+        margin-right: 280px;
+    }
+    header > nav > a{
+        display: none;
+    }
+    .header-col{
+        display: none;
+    }
+    .burger{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        align-items: flex-end;
+    }
+    .burger img:nth-child(1), .burger img:nth-child(2), .burger img:nth-child(3){
+        width: 24px;
+    }
+    .burger img:nth-child(3){
+        width: 14px;
+    }
+    h1{
+        font-family: "Inter";
+        color: var(--text-dark, #212529);
+        font-size: 32px;
+        font-weight: 400;
+        width: 794px;
+        text-transform: uppercase;
+        margin: 0px;
+    }
+    h2{
+        font-family: "Inter";
+        color: var(--text-dark, #212529);
+        font-size: 28px;
+        font-weight: 400;
+        width: 562px;
+        margin: 0px;
+    }
 }
