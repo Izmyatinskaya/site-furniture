@@ -319,14 +319,11 @@ footer p {
     .burger img:nth-child(3){
         width: 14px;
     }
+    main{
+        gap: 48px;
+    }
     h1{
-        font-family: "Inter";
-        color: var(--text-dark, #212529);
         font-size: 32px;
-        font-weight: 400;
-        width: 794px;
-        text-transform: uppercase;
-        margin: 0px;
     }
     .sec1-1 p{
         order: 2;
@@ -354,5 +351,26 @@ footer p {
         width: 343px;
         height: 261px;
     }
-
+    h2:last-child{
+        display: block;
+        font-size: 28px;
+        width: 327px;
+    }
+    h2:first-child{
+        display: none;
+    }
+    .sec2{
+        flex-direction: column;
+    }
+    .sec2-1{
+        margin: 0px 0px 20px 0px;
+    }
+    .sec2-2-1{
+        width: 328px;
+        margin-bottom: 32px;
+    }
+    .sec2-2-2{
+        gap: 20px;
+    }
+    
 }
