@@ -147,7 +147,7 @@ h3{
     flex-direction: column;
     width: 678px;
 }
-.sec3-2 p{
+.sec3-2 > p{
     width: 325px;
     margin-bottom: 44px;
     margin-top: 22px
@@ -168,6 +168,9 @@ h3{
     width: 100%;
     margin: 24px 0px 24px 0px;
 }
+.sec3-2 hr:last-child{
+    margin: 0px 0px 24px 0px; 
+}
 .sec4 h2{
     margin-bottom: 32px;
 }
@@ -187,6 +190,7 @@ td:last-child {
     display: flex;
     flex-direction: row;
     margin-top: 32px;
+    gap: 20px;
 }
 .text18-bold{
     color: var(--text-dark, #212529);
@@ -325,6 +329,9 @@ footer p {
     h1{
         font-size: 32px;
     }
+    h2{
+        font-size: 28px;
+    }
     .sec1-1 p{
         order: 2;
         width: 328px;
@@ -351,12 +358,12 @@ footer p {
         width: 343px;
         height: 261px;
     }
-    h2:last-child{
+    .sec2-1 h2:last-child{
         display: block;
         font-size: 28px;
         width: 327px;
     }
-    h2:first-child{
+    .sec2-1 h2:first-child{
         display: none;
     }
     .sec2{
@@ -372,5 +379,43 @@ footer p {
     .sec2-2-2{
         gap: 20px;
     }
-    
+    h3{
+        font-size: 24px;
+    }
+    .sec3{
+        flex-direction: column;
+    }
+    .sec3-2 > p {
+        margin-bottom: 28px;
+        margin-top: 20px;
+    }
+    .sec3-2-1{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .sec3-2 hr{
+        margin: 20px 0px 20px 0px;
+    }
+    .sec3-2 hr:last-child{
+        margin: 20px 0px 0px 0px;
+    }
+
+
+
+    .sec5 {
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 20px;
+    }
+    .sec5-1{
+        width: 343px;
+        padding: 32px 0px 36px 0px;
+    }
+    .sec5-1 img{
+        width: 32px;
+        height: 32px;
+    }
+    .sec5-1 p.text16{
+        width: 278px;
+    }
 }
