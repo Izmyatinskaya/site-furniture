@@ -13,11 +13,13 @@ header, nav{
 }
 header{
     gap: 40px;
+    margin-bottom: 46px;
 }
 .header-col{
     display: flex;
     flex-direction: column;
-    margin-right: 207px;
+    margin-right: 261px;
+    gap: 8px;
 }
 .logo{
     margin-right: 861px;
@@ -32,12 +34,25 @@ main{
     gap: 120px;
     flex-direction: column;
 }
+.sec1{
+    display: flex;
+    flex-direction: column;
+}
 .sec1-1{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
-    margin-bottom: 40px;
+    z-index: 1;
+    flex-wrap: wrap;
+}
+.sec1-1 p{
+    width: 445px;
+    order: 3;
+    margin-top: 31px;
+}
+.sec1-1 a{
+    margin-left: 418px;
 }
 h1{
     font-family: "Inter";
@@ -55,20 +70,16 @@ h1{
 }
 .sec1-2{
     display: flex;
+    align-items: flex-end;
     flex-direction: row;
     justify-content: space-between;
-    align-content: flex-start;
-    align-items: flex-start;
+    position: relative;
+    margin-top: 208px;
 }
-.sec1-2-1{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.sec1-2-1 > p {
-    width: 445px;
-    margin-bottom: 250px;
-    margin-top: 0px;
+
+.sec1-2 img:last-child{
+    position: absolute;
+    margin-left: 760px;
 }
 h2{
     font-family: "Inter";
@@ -317,12 +328,31 @@ footer p {
         text-transform: uppercase;
         margin: 0px;
     }
-    h2{
-        font-family: "Inter";
+    .sec1-1 p{
+        order: 2;
+        width: 328px;
+        margin-top: 20px;
+    }
+    .sec1-1 a{
+        order: 3;
+        margin: 24px 0px 24px 0px;
+    }
+    .text20{
         color: var(--text-dark, #212529);
-        font-size: 28px;
-        font-weight: 400;
-        width: 562px;
+        font-size: 16px;
+        font-family: "Roboto";
+    }
+    .sec1-2{
         margin: 0px;
     }
+    .sec1-2 img:first-child{
+        display: none;
+    }
+    .sec1-2 img:last-child{
+        position: relative;
+        margin: 0px;
+        width: 343px;
+        height: 261px;
+    }
+
 }
