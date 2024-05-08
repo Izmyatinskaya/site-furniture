@@ -1,5 +1,7 @@
 
-
+html {
+    scroll-behavior: smooth;
+}
 body{
     width: 1440px;
     margin: 12px 32px 16px 32px;
@@ -10,6 +12,10 @@ header, nav{
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+}
+nav a{
+    text-decoration:none;
+    color: var(--text-dark, #212529);
 }
 header{
     gap: 40px;
@@ -53,6 +59,7 @@ main{
 }
 .sec1-1 a{
     margin-left: 418px;
+    margin-right: 32px;
 }
 h1{
     font-family: "Inter";
@@ -79,7 +86,7 @@ h1{
 
 .sec1-2 img:last-child{
     position: absolute;
-    margin-left: 760px;
+    margin-left: 730px;
 }
 h2{
     font-family: "Inter";
