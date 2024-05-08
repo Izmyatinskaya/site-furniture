@@ -174,18 +174,21 @@ h3{
 .sec4 h2{
     margin-bottom: 32px;
 }
-table{
-    border-collapse: collapse;
+.table{
+    display: flex;
+    flex-direction: column;
+   
 }
-td, td:first-child {
-    padding: 0px 20px 0px 0px;
+.line1, .line2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-td:last-child {
-    padding: 0px 0px 0px 0px;
+.line1{
+    margin-bottom: 20px;
 }
-.line1 td:nth-child(1), .line1 td:nth-child(2), .line1 td:nth-child(3){
-    padding-bottom: 20px;
-}
+
 .sec5{
     display: flex;
     flex-direction: row;
@@ -403,8 +406,26 @@ footer p {
         margin: 20px 0px 0px 0px;
     }
 
-
-
+    .table{
+        flex-direction: row;
+        width: 345px;
+        height: 345px;
+        overflow: hidden;
+    }
+    .table img{
+        width: 252px;
+        /* position: absolute; */
+    }
+    .line1, .line2{
+        flex-wrap: nowrap;
+    }
+    .line1{
+        margin-right: 20px;
+    }
+    .slider{
+        display: flex;
+        transition: 0.8s ease-in;
+    }
     .sec5 {
         flex-direction: column;
         gap: 16px;
@@ -421,7 +442,6 @@ footer p {
     .sec5-1 p.text16{
         width: 278px;
     }
-
     .sec6 > img{
         display: none;
     }

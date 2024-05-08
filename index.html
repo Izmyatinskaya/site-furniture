@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+  
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Aveji</title>
+<title>Aveji</title>
 </head>
 <body>
     
@@ -115,18 +116,20 @@
 
     <section class="sec4">
         <h2>Проекты</h2>
-        <table>
-              <tr class="line1">
-                <td><img src="images\project-1.jpg" alt="Изображение 1"></td>
-                <td><img src="images\project-2.jpg" alt="Изображение 2"></td>
-                <td><img src="images\project-3.jpg" alt="Изображение 3"></td>
-              </tr>
-              <tr>
-                <td><img src="images\project-4.jpg" alt="Изображение 4"></td>
-                <td><img src="images\project-5.jpg" alt="Изображение 5"></td>
-                <td><img src="images\project-6.jpg" alt="Изображение 6"></td>
-              </tr>
-        </table>
+        <div class="table" onclick="move()">
+            <div class="slider">
+                <div class="line1">
+                    <div id="img1"><img src="images\project-1.jpg" alt="Изображение 1"></div>
+                    <div id="img2"><img src="images\project-2.jpg" alt="Изображение 2"></div>
+                    <div id="img3"><img src="images\project-3.jpg" alt="Изображение 3"></div>
+                </div>
+                <div class="line2">
+                    <div id="img4"><img src="images\project-4.jpg" alt="Изображение 4"></div>
+                    <div id="img5"><img src="images\project-5.jpg" alt="Изображение 5"></div>
+                    <div id="img6"><img src="images\project-6.jpg" alt="Изображение 6"></div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section>
@@ -183,5 +186,7 @@
             <p class="text18">Телеграм</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
