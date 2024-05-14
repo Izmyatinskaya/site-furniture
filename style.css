@@ -4,7 +4,9 @@ html {
 }
 body{
     width: 1440px;
-    margin: 12px 32px 16px 32px;
+    margin: auto; 
+    /* 12px 32px 16px 32px; */
+
 }
 header, nav{
     display: flex;
@@ -16,16 +18,29 @@ header, nav{
 nav a{
     text-decoration:none;
     color: var(--text-dark, #212529);
+    width: max-content;
+}
+nav > a{
+    width: max-content;
+    margin-right: 32px;
 }
 header{
     gap: 40px;
     margin-bottom: 46px;
+    margin-top: 12px;
+    margin-left: 32px;
+    margin-right: 32px;
 }
 .header-col{
     display: flex;
     flex-direction: column;
-    margin-right: 261px;
+    margin-right: 228px;
     gap: 8px;
+}
+.header-col2{
+    height: 0px;
+    opacity: 0;
+    transition: 0.4s ease-in;
 }
 .logo{
     margin-right: 861px;
@@ -39,6 +54,8 @@ main{
     display: flex;
     gap: 120px;
     flex-direction: column;
+    margin-left: 32px;
+    margin-right: 32px;
 }
 .sec1{
     display: flex;
@@ -58,8 +75,8 @@ main{
     margin-top: 31px;
 }
 .sec1-1 a{
-    margin-left: 418px;
-    margin-right: 32px;
+    /* margin-left: 418px;
+    margin-right: 32px; */
 }
 h1{
     font-family: "Inter";
@@ -274,7 +291,7 @@ button{
 footer{
     display: flex;
     flex-direction: row;
-    margin: 120px 0px 0px 0px;
+    margin: 120px 32px 16px 32px;
     align-items: flex-end;
 }
 footer p {
@@ -302,17 +319,48 @@ footer p {
 {
     body{
         width: 375px;
-        margin-bottom: 20px;
+        margin: auto;
+        /* margin-bottom: 20px;
         margin-left: 16px;
         margin-right: 14px;
-        margin-top: 8px;
+        margin-top: 8px; */
+    }
+    section{
+        width: 344px;
     }
     header, nav{
         display: flex;
         width: 343px;
+    }
+    nav{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+    }
+    header{
+        margin-top: 8px;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-left: 16px;
+        margin-right: 16px;
+        justify-content: space-between;
+    }
+    .header-col2{
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+        margin-left: 35px;
+        transition: 0.4s ease-in;
+    }
+    .header-col2 a{
+        text-decoration:none;
+        color: var(--text-dark, #212529);
+    }
+    .head-active{
+        margin-bottom: inherit;
+        height: 100px;
+        opacity: 1;
     }
     .logo{
         width: 39px;
@@ -324,23 +372,40 @@ footer p {
     .header-col{
         display: none;
     }
+    .menu-block{
+        display: flex;
+    }
     .burger{
         display: flex;
         flex-direction: column;
         gap: 6px;
         align-items: flex-end;
+        transition: 0.4s ease-in;
+    }
+    .active{
+        transform: translateY(7px) rotate(45deg);
+    }
+    .active2{
+        transform: rotate(-45deg);
+    }
+    .active3{
+        opacity: 0;
     }
     .burger img:nth-child(1), .burger img:nth-child(2), .burger img:nth-child(3){
         width: 24px;
+        transition: 0.4s ease-in;
     }
     .burger img:nth-child(3){
         width: 14px;
     }
     main{
         gap: 48px;
+        margin-left: 16px;
+        margin-right: 16px;
     }
     h1{
         font-size: 32px;
+        width: 343px;
     }
     h2{
         font-size: 28px;
@@ -381,9 +446,14 @@ footer p {
     }
     .sec2{
         flex-direction: column;
+        width: 342px;
     }
     .sec2-1{
         margin: 0px 0px 20px 0px;
+        width: 342px;
+    }
+    .sec2-2{
+        width: 342px;
     }
     .sec2-2-1{
         width: 328px;
@@ -391,12 +461,19 @@ footer p {
     }
     .sec2-2-2{
         gap: 20px;
+        width: 161px;
+    }
+    .sec2-2-2 h3{
+        width: 161px;
     }
     h3{
         font-size: 24px;
     }
     .sec3{
         flex-direction: column;
+    }
+    .sec3-2{
+        width: 343px;
     }
     .sec3-2 > p {
         margin-bottom: 28px;
@@ -412,7 +489,9 @@ footer p {
     .sec3-2 hr:last-child{
         margin: 20px 0px 0px 0px;
     }
-
+    .sec4 > h2, #recomedation > h2{
+        width: 213px;
+    }
     .table{
         flex-direction: row;
         width: 345px;
@@ -421,7 +500,12 @@ footer p {
     }
     .table img{
         width: 252px;
-        /* position: absolute; */
+    }
+    .second-img {
+        width: 73px;
+        height: 328px;
+        object-fit: cover;
+        object-position: left;
     }
     .line1, .line2{
         flex-wrap: nowrap;
@@ -454,6 +538,7 @@ footer p {
     }
     .sec6-1 h2{
         margin-bottom: 20px;
+        width: 345px;
     }
     .sec6-1 p {
         margin-bottom: 32px;
@@ -469,7 +554,7 @@ footer p {
     }
     footer{
         flex-direction: column-reverse;
-        margin: 60px 0px 0px 0px;
+        margin: 60px 0px 20px 0px;
         align-items: center; 
     }
     .sec7-1{
