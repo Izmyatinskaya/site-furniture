@@ -19,6 +19,11 @@ nav a{
     text-decoration:none;
     color: var(--text-dark, #212529);
     width: max-content;
+    transition: 0.1s ease-in;
+}
+nav a:hover {
+    font-weight: 600;
+    transition: 0.1s ease-in;
 }
 nav > a{
     width: max-content;
@@ -235,6 +240,7 @@ h3{
     border: black 1px solid;
     padding: 40px 0px 60px 0px;
 }
+
 .sec5-1 > p.text16{
     width: 365px;
     text-align: center;
@@ -282,11 +288,20 @@ button{
     font-family: "Roboto";
     margin: 0px 0px 40px 0px;
     border: 0px;
+    transition: 0.4s ease-in-out;
+}
+button:hover{
+    background-color: #DDD7C0;
+    color: #212529;
+    transition: 0.4s ease-in-out;
 }
 .sec6-1-1{
     display: flex;
     flex-direction: row;
     gap: 8px;
+}
+.sec6-1-1 > img{
+    cursor: pointer;
 }
 footer{
     display: flex;
@@ -296,6 +311,9 @@ footer{
 }
 footer p {
     margin: 0px;
+}
+.sec7-2 p, .sec7-3 p{
+    cursor: pointer;
 }
 .sec7-1{
     display: flex;
